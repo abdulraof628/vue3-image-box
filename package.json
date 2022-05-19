@@ -1,64 +1,25 @@
 {
-  "name": "vue3-image-box",
-  "version": "1.1.0",
-  "description": "A simple image lightbox component for vue3.0",
+  "name": "@abdulraof628/image-light-box",
+  "version": "1.0.3",
+  "description": "Simple lightbox for images",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/linmasahiro/vue3-image-box"
+    "url": "git+https://github.com/abdulraof628/vue3-image-box.git"
   },
   "keywords": [
-    "vue",
-    "vue3",
-    "picture",
-    "picturebox",
-    "picture-box",
-    "image",
-    "imagebox",
-    "image-box",
     "image-lightbox"
   ],
-  "author": "Lin Masahiro(k80092@hotmail.com)",
-  "license": "MIT",
-  "private": false,
+  "author": "Abdul Raof",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/linmasahiro/vue3-image-box/issues"
+    "url": "https://github.com/abdulraof628/vue3-image-box/issues"
   },
-  "homepage": "https://github.com/linmasahiro/vue3-image-box",
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
-  },
+  "homepage": "https://github.com/abdulraof628/vue3-image-box#readme",
   "dependencies": {
-    "core-js": "^3.6.5",
-    "vue": "^3.0.0"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.0.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0-0"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/vue3-essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+    "@abdulraof628/image-light-box": "^1.0.1"
+  }
 }

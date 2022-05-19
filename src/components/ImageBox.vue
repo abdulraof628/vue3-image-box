@@ -1,5 +1,5 @@
 <template>
-  <div :class="imagesListClass">
+  <div :class="imagesListClass" v-show="false">
     <div v-for="(img, i) in images" :key="i">
       <img :src="img.thumb" @click="selected(i, img.src, img.caption)" />
     </div>
@@ -180,10 +180,11 @@ export default defineComponent({
         return [];
       },
     },
+    showLightbox: Boolean
   },
   setup(props) {
     const state = reactive({
-      show: false,
+      show: this.showLightbox,
       isChanging: false,
       selectedIndex: 1,
       selectedImgPath: "",

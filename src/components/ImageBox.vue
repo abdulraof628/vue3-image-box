@@ -184,9 +184,10 @@ export default defineComponent({
     openLightbox: Boolean
   },
   created(){
-      state.selectedIndex = 0;
-      state.selectedImgPath = this.images[0].src;
-      state.selectedCaption = this.images[0].caption;
+      console.log(this.state)
+      this.state.selectedIndex = 0;
+      this.state.selectedImgPath = this.images[0].src;
+      this.state.selectedCaption = this.images[0].caption;
   },
   setup(props) {
     const state = reactive({

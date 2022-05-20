@@ -242,10 +242,8 @@ export default defineComponent({
   },
   watch: {
     openLightbox: {
-      handler(openLightbox){
-        if(openLightbox == true){
-          this.prev()
-        }
+      handler(){
+        console.log(this.openLightbox)
       }
     }
   }

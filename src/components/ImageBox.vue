@@ -184,7 +184,7 @@ export default defineComponent({
     openLightbox: Boolean
   },
   created(){
-    prev()
+    this.prev()
   },
   setup(props) {
     const state = reactive({

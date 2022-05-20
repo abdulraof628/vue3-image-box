@@ -6,7 +6,7 @@
   </div> -->
   <div
     v-if="state.show = openLightbox"
-    @click="state.show = !openLightbox"
+    @click="openLightbox = !openLightbox"
     class="vue-lb-container"
     style="
       touch-action: pan-y;
@@ -22,7 +22,7 @@
           type="button"
           title="Close (Esc)"
           class="vue-lb-button-close"
-          @click="state.show = !openLightbox"
+          @click="openLightbox = !openLightbox"
         >
           <span
             ><svg
@@ -240,6 +240,15 @@ export default defineComponent({
       touchEnd,
     };
   },
+  watch: {
+    openLightbox: {
+      handler(openLightbox){
+        if(openLightbox == true){
+          this.prev()
+        }
+      }
+    }
+  }
 });
 </script>
 

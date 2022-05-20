@@ -240,19 +240,12 @@ export default defineComponent({
       touchEnd,
     };
   },
-  watch: {
-    openLightbox: {
-      handler(){
-        console.log(this.openLightbox)
-      }
-    }
-  },
   methods: {
     closeImagebox(){
       this.state.show = false
       this.openLightbox = false
       console.log(this.state)
-      console.log(this.openLightbox = false)
+      console.log(this.openLightbox)
     }
   }
 });

@@ -1,11 +1,12 @@
 <template>
-  <div :class="imagesListClass">
+  <!-- <div :class="imagesListClass">
     <div v-for="(img, i) in images" :key="i">
       <img :src="img.thumb" @click="selected(1, img.src, img.caption)" />
     </div>
-  </div>
+  </div> -->
   <div
     v-if="state.show = openLightbox"
+    @click="state.show = false"
     class="vue-lb-container"
     style="
       touch-action: pan-y;

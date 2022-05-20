@@ -1,6 +1,6 @@
 {
   "name": "@abdulraof628/image-light-box",
-  "version": "1.0.9",
+  "version": "1.0.11",
   "description": "Simple lightbox for images",
   "main": "index.js",
   "scripts": {

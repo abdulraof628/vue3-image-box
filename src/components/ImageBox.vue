@@ -20,8 +20,7 @@
         <button
           type="button"
           title="Close (Esc)"
-          class="vue-lb-button-close"
-          :class="'fixed top-2.5 right-5 p-5'"
+          :class="'fixed top-2.5 right-5 p-5 w-10'"
           @click="closeImagebox()"
         >
           <span

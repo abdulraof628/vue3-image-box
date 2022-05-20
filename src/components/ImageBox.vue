@@ -250,8 +250,9 @@ export default defineComponent({
   methods: {
     closeImagebox(){
       this.state.show = false
+      this.openLightbox = false
       console.log(this.state)
-      console.log(this.openLightbox)
+      console.log(this.openLightbox = false)
     }
   }
 });

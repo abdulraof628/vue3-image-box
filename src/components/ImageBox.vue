@@ -242,7 +242,7 @@ export default defineComponent({
   },
   methods: {
     closeImagebox(){
-      $emit('closeImagebox', true)
+      this.$emit('closeImagebox', true)
     }
   }
 });

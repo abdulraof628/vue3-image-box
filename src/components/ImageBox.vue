@@ -183,6 +183,9 @@ export default defineComponent({
     },
     openLightbox: Boolean
   },
+  mounted(){
+    console.log(this.images)
+  },
   setup(props) {
     const state = reactive({
       show: false,

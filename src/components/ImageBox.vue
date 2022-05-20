@@ -191,8 +191,8 @@ export default defineComponent({
       show: false,
       isChanging: false,
       selectedIndex: 0,
-      selectedImgPath: this.images[selectedIndex].src,
-      selectedCaption: this.images[selectedIndex].caption,
+      selectedImgPath: "",
+      selectedCaption: "",
     });
     const selected = (index, path, caption) => {
       state.selectedIndex = index;

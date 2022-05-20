@@ -183,7 +183,7 @@ export default defineComponent({
     },
     openLightbox: Boolean
   },
-  mounted(){
+  created(){
     console.log(this.images)
   },
   setup(props) {

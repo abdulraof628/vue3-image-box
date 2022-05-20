@@ -5,7 +5,7 @@
     </div>
   </div>
   <div
-    v-if="state.show"
+    v-if="state.show = openLightbox"
     class="vue-lb-container"
     style="
       touch-action: pan-y;
@@ -180,6 +180,7 @@ export default defineComponent({
         return [];
       },
     },
+    openLightbox: Boolean
   },
   setup(props) {
     const state = reactive({

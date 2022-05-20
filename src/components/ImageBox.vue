@@ -6,7 +6,6 @@
   </div> -->
   <div
     v-if="state.show = openLightbox"
-    @click="closeImagebox()"
     class="vue-lb-container"
     style="
       touch-action: pan-y;
@@ -22,6 +21,7 @@
           type="button"
           title="Close (Esc)"
           class="vue-lb-button-close"
+          :class="'fixed top-2.5 right-5 p-5'"
           @click="closeImagebox()"
         >
           <span
@@ -184,7 +184,6 @@ export default defineComponent({
     openLightbox: Boolean
   },
   created(){
-      console.log(this.state)
       this.state.selectedIndex = 0;
       this.state.selectedImgPath = this.images[0].src;
       this.state.selectedCaption = this.images[0].caption;

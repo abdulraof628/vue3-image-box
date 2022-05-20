@@ -6,7 +6,7 @@
   </div> -->
   <div
     v-if="state.show = openLightbox"
-    @click="closeImagebox"
+    @click="closeImagebox()"
     class="vue-lb-container"
     style="
       touch-action: pan-y;
@@ -22,7 +22,7 @@
           type="button"
           title="Close (Esc)"
           class="vue-lb-button-close"
-          @click="closeImagebox"
+          @click="closeImagebox()"
         >
           <span
             ><svg
@@ -250,6 +250,8 @@ export default defineComponent({
   methods: {
     closeImagebox(){
       this.state.show = false
+      console.log(this.state)
+      console.log(this.openLightbox)
     }
   }
 });

@@ -243,15 +243,6 @@ export default defineComponent({
       touchEnd,
     };
   },
-  watch: {
-    openLightbox: {
-      handler(){
-        if(this.openLightbox == true){
-          prev()
-        }
-      }
-    }
-  },
   methods: {
     closeImagebox(){
       this.$emit('closeImagebox', true)

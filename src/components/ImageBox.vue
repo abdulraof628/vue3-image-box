@@ -20,7 +20,7 @@
         <button
           type="button"
           title="Close (Esc)"
-          :class="'fixed top-2.5 right-5 p-5 w-10'"
+          :class="'fixed p-1 w-10'"
           @click="closeImagebox()"
         >
           <span
@@ -186,6 +186,15 @@ export default defineComponent({
       this.state.selectedIndex = 0;
       this.state.selectedImgPath = this.images[0].src;
       this.state.selectedCaption = this.images[0].caption;
+  },
+  watch: {
+    images: {
+      handler(){
+        this.state.selectedIndex = 0;
+        this.state.selectedImgPath = this.images[0].src;
+        this.state.selectedCaption = this.images[0].caption;
+      }
+    }
   },
   setup(props) {
     const state = reactive({

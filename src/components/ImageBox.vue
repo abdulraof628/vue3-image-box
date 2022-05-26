@@ -20,7 +20,7 @@
         <button
           type="button"
           title="Close (Esc)"
-          :class="'fixed p-1 w-10'"
+          :class="'relative p-1 w-10'"
           @click="closeImagebox()"
         >
           <span
